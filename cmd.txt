@@ -1,0 +1,9 @@
+
+To be frank You can skip wget or git clone steps with one command:
+
+sudo rpm -ivh http://github.com/Kv-042-DevOps/Demo-1/raw/dev/rpmbuild/RPMS/noarch/demo1-dev-init-1-1.el7.centos.noarch.rpm
+
+
+For example output:
+Retrieving http://github.com/Kv-042-DevOps/Demo-1/raw/dev/rpmbuild/RPMS/noarch/demo1-dev-init-1-1.el7.centos.noarch.rpm
+Preparing...                          ########################################
