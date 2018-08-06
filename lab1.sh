@@ -51,4 +51,4 @@ su - postgres -c  'psql -c "CREATE DATABASE test_db;"'
 sudo  -u postgres   psql -c "CREATE USER test_user WITH password '12345';"
 su - postgres -c 'psql -c "GRANT ALL privileges ON DATABASE test_db TO test_user;"'
 echo "User created"
-echo "All tasks are done" (edited)
+echo "All tasks are done" #(edited)
