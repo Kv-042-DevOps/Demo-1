@@ -7,11 +7,12 @@ Vagrant.configure("2") do |config|
   
 config.vm.box = "centos/7"
 config.vm.boot_timeout = 120
-
+config.vm.synced_folder '.', '/vagrant', disabled: true
 
 config.vm.define "develop" do |develop|
   develop.vm.hostname = "develop"
   develop.vm.network "private_network", ip: "192.168.123.11"
+  config.vm.network "forwarded_port", guest: 8000, host: 8000
   develop.vm.provision "file", source: "./app", destination: "/tmp/"
   develop.vm.provision "shell", path: "./shell/environment.sh"
 end
