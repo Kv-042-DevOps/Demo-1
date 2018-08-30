@@ -16,18 +16,18 @@ vault operator unseal %KEY3%
 for /f "tokens=2 delims=:" %%l in ('findstr /r /c:"^Initial Root Token:" keys.txt') do set VAULT_TOKEN=%%l
 vault login %VAULT_TOKEN%
 
-echo "Pick up login/password for save in Vault secret/foo"
+echo "Pick up data for save in Vault secret/foo"
 
 set /p LOGIN=Enter login name:
 
 set /p PASSWORD=Enter login password:
 
-vault kv put secret/foo login=%LOGIN% password=%PASSWORD%
+set /p PATH=Enter path/file for private_key of vagrant machine:
+
+set /p KEY= <%PATH%
+
+vault kv put secret/foo login=%LOGIN% password=%PASSWORD% key="%KEY%"
 
 @pause
-
-set LOGIN=""
-
-set PASSWORD=""
 
 cls
