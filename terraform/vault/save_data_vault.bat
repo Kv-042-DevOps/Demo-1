@@ -10,7 +10,7 @@ set /p PATH=Enter path/file for private_key of vagrant machine:
 
 set /p KEY= <%PATH%
 
-vault kv put secret/foo login=%LOGIN% password=%PASSWORD% key="%KEY%"
+vault kv put secret/foo login=%LOGIN% password=%PASSWORD% key=@%KEY%
 
 @pause
 
