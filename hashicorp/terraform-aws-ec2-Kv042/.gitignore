@@ -14,6 +14,7 @@
 
 #ssh keys
 .keypairs/
+.aws/
 
 .vagrant/
 
