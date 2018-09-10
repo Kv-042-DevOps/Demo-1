@@ -26,6 +26,15 @@ The AWS Development guide is for **educational purposes only**. It's designed to
 ## Prerequisites
 
 - [Download Terraform](https://www.terraform.io/downloads.html)
+- Create folder for keypairs
+- Generate key pairs 
+
+### Command
+ ssh-keygen
+
+### Output
+    files in %USERPROFILE%/.ssh
+
 
 ## Steps
 
