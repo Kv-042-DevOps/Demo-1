@@ -12,5 +12,8 @@
 # SSH Keys
 *.pem
 
+# aws credentials
+.aws/
+
 .vagrant/
 
