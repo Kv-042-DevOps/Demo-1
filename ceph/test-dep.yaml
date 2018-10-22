@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: claim1
+  name: claim2
 spec:
   accessModes:
     - ReadWriteOnce
@@ -33,7 +33,7 @@ spec:
       volumes:
         - name: test-pvc-storage
           persistentVolumeClaim:
-            claimName: claim1
+            claimName: claim2
       containers:
         - name: test-container
           image: nginx:alpine
