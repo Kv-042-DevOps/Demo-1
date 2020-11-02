@@ -12,7 +12,7 @@ h2 Activate virtual envirment
 source .env/bin/activate
 
 h2 Install dependencies
-pip insttall -r requirements.txt
+pip install -r requirements.txt
 
 h2  Run app
 ------------------------  
